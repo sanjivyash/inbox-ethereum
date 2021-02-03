@@ -30,6 +30,5 @@ const web3 = new Web3(provider);
 			gas: "1000000"
 		});
 
-	console.log("Contract deployed to ", inbox.options.address);
-	process.exit(0);
+	console.log("Contract deployed to:", inbox.options.address);
 })();
