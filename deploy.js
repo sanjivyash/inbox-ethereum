@@ -19,7 +19,7 @@ const web3 = new Web3(provider);
 	//the only account with ether
 	const richAccount = accounts[0];
 
-	// compile contract
+	// deploy contract
 	const inbox = await new web3.eth.Contract(compile.abi)
 		.deploy({
 			data: compile.evm.bytecode.object, 
